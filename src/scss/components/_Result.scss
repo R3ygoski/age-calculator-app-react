@@ -1,0 +1,31 @@
+.card__date-result {
+    color: $purple;
+    font-size: 2rem;
+    font-weight: 800;
+    span {
+        color: $off-black;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 800;
+    }
+}
+
+@media (min-width: 375px) {
+    .card__date-result {
+        font-size: 3rem;
+        span {
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .card__date-result {
+        font-size: 6rem;
+        span {
+            font-size: 6rem;
+        }
+    }
+}
+

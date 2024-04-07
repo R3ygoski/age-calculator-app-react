@@ -1,0 +1,53 @@
+.card__form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    &-label {
+        color: $smokey-grey;
+        font-weight: 700;
+        font-size: .825rem;
+        letter-spacing: .2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &-label-error {
+        @extend .card__form-container-label;
+        color: $light-red;
+    }
+    &-input {
+        height: 2.5rem;
+        width: 100%;
+        height: 3rem;
+        border-radius: .4rem;
+        border: 1px solid $light-grey;
+        margin-top: .4rem;
+        padding: 0 1rem;
+        font-size: 1.25rem;
+        color: $off-black;
+        font-weight: 700;
+        &:focus {
+            outline: 2px solid $purple;
+            outline-offset: -2px;	
+        }
+    }
+    &-input-error {
+        @extend .card__form-container-input;
+        border: 1px solid $light-red;
+    }
+    &-error {
+        color: $light-red;
+        font-style: italic;
+        font-size: .925rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card__form-container {
+        width: 22%;
+        margin-top: 2rem;
+        &-input {
+            padding: 2.15rem 1rem;
+            font-size: 1.825rem;
+        }
+    }
+}

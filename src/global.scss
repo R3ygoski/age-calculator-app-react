@@ -1,0 +1,24 @@
+@import './scss/abstract/var';
+@import './scss/components/App';
+@import './scss/components/DateInput';
+@import './scss/components/Result';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+body {
+    overflow-y: hidden;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: $off-white;
+}
