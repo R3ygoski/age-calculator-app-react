@@ -145,15 +145,15 @@ export default function App() {
       <form className="card__form">
         <DateInput dateType="day" 
         state={dayValue} setState={setDayValue} 
-        err={dayError} setErr={setDayError}/>
+        err={dayError} placeholder={'DD'}/>
 
         <DateInput dateType="month" 
         state={monthValue} setState={setMonthValue} 
-        err={monthError} setErr={setMonthError}/>
+        err={monthError} placeholder={'MM'}/>
 
         <DateInput dateType="year" 
         state={yearValue} setState={setYearValue} 
-        err={yearError} setErr={setYearError}/>
+        err={yearError} placeholder={'YYYY'}/>
 
         <button type="submit" onClick={(e) => {submitHandler(e);clickHandler()}}>
           <img src={ArrowIcon} alt="Arrow Icon"/>
